@@ -1,1 +1,47 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XP.css example</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function gotoYouTube() {
+            window.open("https://www.youtube.com/c/taylorbrauer", "_blank");
+        }
+
+        function gotoTwitter() {
+            window.open("https://www.twitter.com/taylorcbrauer", "_blank");
+        }
+
+        function gotoInstagram() {
+            window.open("https://www.instagram.com/taylorcbrauer", "_blank");
+        }
+    </script>
+</head>
+
+<body>
+<section class="content">
+<div class="window" style="margin: 32px; width: 500px">
+    <div class="title-bar">
+        <div class="title-bar-text">
+            Welcome
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="window-body">
+        <p>Hello, internet!</p>
+        <p>My name's Taylor Brauer and I'm a Software Engineer</p>
+        <br>
+        <button onclick="gotoYouTube()">My YouTube</button>
+        <button onclick="gotoTwitter()">My Twitter</button>
+        <button onclick="gotoInstagram()">My Instagram</button>
+    </div>
+</div>
+</section>
+</body>
+</html>
